@@ -32,6 +32,7 @@ doc:
 	asciidoctor -T custom-html5 -o dist/setup-development.html setup-development.adoc
 	asciidoctor -T custom-html5 -o dist/setup-alternatives.html setup-alternatives.adoc
 	asciidoctor -T custom-html5 -o dist/setup-faqs.html setup-faqs.adoc
+	asciidoctor -T custom-html5 -o dist/upgrades.html upgrades.adoc
 	asciidoctor -T custom-html5 -o dist/api.html api/api.adoc
 	asciidoctor -T custom-html5 -o dist/webhooks.html webhooks.adoc
 	cp -r assets/* dist || exit 1

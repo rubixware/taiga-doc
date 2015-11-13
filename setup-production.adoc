@@ -22,7 +22,6 @@ Each component can run on one unique machine or each can be installed in a diffe
 this tutorial we will setup everything in one single machine. This type of setup should suffice
 for small/medium production environments.
 
-
 Before starting
 ---------------
 
@@ -169,7 +168,7 @@ DEFAULT_FROM_EMAIL = "no-reply@example.com"
 SERVER_EMAIL = DEFAULT_FROM_EMAIL
 
 # Uncomment and populate with proper connection parameters
-# for enable email sending. EMAIL_HOST_USER should end by @domain.tld 
+# for enable email sending. EMAIL_HOST_USER should end by @domain.tld
 #EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 #EMAIL_USE_TLS = False
 #EMAIL_HOST = "localhost"
@@ -288,10 +287,10 @@ git checkout stable
 ----
 
 And now, you can configure it copying the
-`taiga-front-dist/dist/js/conf.example.json` to `taiga-front-dist/dist/js/conf.json`
+`taiga-front-dist/dist/conf.example.json` to `taiga-front-dist/dist/conf.json`
 and editing it.
 
-.Copy and edit initial configuration on ~/taiga-front-dist/dist/js/conf.json
+.Copy and edit initial configuration on ~/taiga-front-dist/dist/conf.json
 [source,json]
 ----
 {
@@ -605,7 +604,7 @@ sudo ln -s /etc/nginx/sites-available/taiga /etc/nginx/sites-enabled/taiga
 
 You can verify the nginx configuration with the following command to track any error preventing the service to start with `sudo nginx -t`.
 
-Finally, restart nginx with `sudo service nginx restart`.	
+Finally, restart nginx with `sudo service nginx restart`.
 
 **Now you should have the service up and running on `http://example.com/`**
 
@@ -740,7 +739,7 @@ SERVER_EMAIL = DEFAULT_FROM_EMAIL
 sudo service circus restart
 ----
 
-.Update ~/taiga-front-dist/dist/js/conf.json
+.Update ~/taiga-front-dist/dist/conf.json
 [source,json]
 ----
 {
