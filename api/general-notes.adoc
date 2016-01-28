@@ -256,3 +256,7 @@ The LanguageId can be chosen from the value list of available languages. You can
 If the api is configured with throttling you have to take care on responses
 with 429 (Too many requests) status code, that mean you reach the throttling
 limit.
+
+=== Blocked resources
+
+If a project is blocked all its related resources (wiki pages, isues, user stories, tasks, memberships...) and the project itself will be accesible only in read-only mode. The API will return 451 errors when updating, deleting or creating content for this blocked projects.

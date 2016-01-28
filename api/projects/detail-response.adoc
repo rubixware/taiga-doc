@@ -855,6 +855,7 @@
     "is_private": false,
     "userstories_csv_uuid": null,
     "tasks_csv_uuid": null,
-    "issues_csv_uuid": null
+    "issues_csv_uuid": null,
+    "blocked_code": "blocked-by-staff"
 }
 ----
